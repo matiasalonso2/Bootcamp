@@ -7,6 +7,12 @@ public class RomanNumber {
     private String roman;
     private String decimal;
 
+    public RomanNumber(String message, String roman, String decimal) {
+        this.message = message;
+        this.decimal = decimal;
+        this.roman = roman;
+    }
+
     public static RomanNumber convertir(String number){
 
         TreeMap<Integer, String> map = new TreeMap<Integer, String>();
@@ -60,12 +66,6 @@ public class RomanNumber {
 
     public void setDecimal(String decimal) {
         this.decimal = decimal;
-    }
-
-    public RomanNumber(String message, String roman, String decimal) {
-        this.message = message;
-        this.decimal = decimal;
-        this.roman = roman;
     }
 
 }
